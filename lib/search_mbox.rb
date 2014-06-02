@@ -17,7 +17,7 @@ module SearchMbox
          end
      end
       
-     def self.search
+     def self.search(rule = nil)
          rule = ['ALL'] if rule.nil?
          @mails = Array.new
          @imap.examine('INBOX')
